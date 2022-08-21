@@ -14,6 +14,7 @@ import Vuelidate from "vuelidate";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import {
+  BootstrapVue,
   FormGroupPlugin,
   FormPlugin,
   FormInputPlugin,
@@ -26,6 +27,7 @@ import {
   LayoutPlugin,
 } from "bootstrap-vue";
 [
+  BootstrapVue,
   FormGroupPlugin,
   FormPlugin,
   FormInputPlugin,
@@ -78,6 +80,7 @@ const shared_data = {
     localStorage.removeItem("username");
     this.username = undefined;
   },
+  server_domain: "http://localhost:3308",
 };
 console.log(shared_data);
 // Vue.prototype.$root.store = shared_data;
